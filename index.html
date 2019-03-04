@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TO DO</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+  <script type="text/javascript" src="app.js" async=""></script>
+  <script type="text/javascript" src="typed.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Karla|Rubik" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container container-header">
+    <!-- header with date and finish by input fields -->
+    <div class="row header-row">
+      <div class="col-xs-12 col-xs-offset-12 text-center">
+        <h1 class="heading">TO DO</h1>
+      </div>
+      <div class="col-xs-12 col-xs-offset-12 form-group inputs">
+        <label>Date:</label>
+        <input id="date" type="text" class="form-control" placeholder="DATE: ">
+        <label>Finish By:</label>
+        <input id="finish" type="text" class="form-control" placeholder="FINISH BY: ">
+      </div>
+    </div>
+  </div> <!-- end div of first container-->
+
+  <div class="container list-container">
+    <div class="row first-row">
+
+      <div class="col-sm-6 list list-headers">
+        <h3 class="h3-headers">TASKS</h3>
+        <ul id="tasks" class="todo-lists">
+        </ul>
+        <input type="text" class="addTask" placeholder="Add Task">
+        <button class="addTaskButton">Add</button>
+      </div>
+
+      <div class="col-sm-6 list list-headers">
+        <h3 class="h3-headers">ERRANDS</h3>
+        <ul id="errands" class="todo-lists">
+
+        </ul>
+        <input type="text" class="addErrand" placeholder="Add Errand">
+        <button class="addErrandButton">Add</button>
+      </div>
+    </div>
+
+    <div class="row first-row">
+
+      <div class="col-sm-6 list list-headers">
+        <h3 class="h3-headers">CORRESPONDENCE</h3>
+        <ul id="corres" class="todo-lists">
+        </ul>
+        <input type="text" class="addCorres" placeholder="Add Correspondence">
+        <button class="addCorresButton">Add</button>
+      </div>
+
+      <div class="col-sm-6 list list-headers">
+        <h3 class="h3-headers">NOTES</h3>
+        <ul id="notes" class="todo-lists">
+        </ul>
+        <input type="text" class="addNote" placeholder="Add Note">
+        <button class="addNoteButton">Add</button>
+      </div>
+    </div>
+
+    <div class="id-strings">
+      <h3 class="typed-text"><span id="typed"></span></h3>
+    </div>
+
+  </div> <!-- end div of second container-->
+
+</body>
+</html>
